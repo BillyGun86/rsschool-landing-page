@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="A cozy coffee house with fresh coffee, desserts and a warm atmosphere."
+  >
+
+  <title>Coffee House — Home</title>
+
+  <!-- <link rel="icon" href="./assets/favicon/favicon.ico"> -->
+
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/favorite-coffee.css">
+  <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/mobile app.css">
+  <link rel="stylesheet" href="./styles/contacts.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a class="logo" href="./index.html" aria-label="Coffee House home">
+        <img
+          src="./assets/images/icons/logo/logo_light.svg"
+          alt="Coffee House logo"
+          width="120"
+          height="40"
+        >
+      </a>
+
+      <nav class="navigation" aria-label="Main navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a
+              class="navigation__link navigation__link--active"
+              href="./index.html"
+            >
+              Favorite coffee
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="./menu.html">
+              About
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">
+              Mobile app
+            </a>
+          </li>
+
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contact">
+              Contact us
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <div class="Theme_switch">
+            <img src="./assets/images/icons/light/Sun-Light.svg" alt="Sun">
+            <img src="./assets/images/icons/light/Moon-default.svg" alt="Moon">
+        </div>
+
+        <div class="coffee-menu">
+            <p>Menu</p>
+            <img src="./assets/images/icons/light/coffee-cup.svg" alt="coffee-cup">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <div class="hero__content">
+          <p class="hero__subtitle">Welcome to Coffee House</p>
+
+          <h1 class="hero__title" id="hero-title">
+            Enjoy your coffee and relax
+          </h1>
+
+          <p class="hero__description">
+            Discover freshly brewed coffee, delicious desserts and a cozy
+            atmosphere for every moment.
+          </p>
+
+          <a class="button hero__button" href="./menu.html">
+            Explore our menu
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- <section class="favorite-coffee" id="about" aria-labelledby="about-title">
+      <div class="favorite-coffee-container">
+        <h2 class="section__title" id="about-title">
+          About our coffee house
+        </h2>
+
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              We carefully select the best coffee beans and prepare every
+              drink with attention to detail.
+            </p>
+
+            <p>
+              Our coffee house is a place where you can meet friends, work
+              comfortably or simply enjoy a quiet evening.
+            </p>
+          </div>
+
+          <div class="about__image-wrapper">
+            <img
+              class="about__image"
+              src="./assets/images/about/about.jpg"
+              alt="Interior of the coffee house"
+              width="600"
+              height="500"
+            >
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="mobile app" aria-labelledby="popular-title">
+      <div class="mobile app-container">
+        <h2 class="section__title" id="popular-title">
+          Popular drinks
+        </h2>
+
+        <div class="slider">
+          <div class="slider__track">
+            <article class="slide slide--active">
+              <img
+                class="slide__image"
+                src="./assets/images/products/espresso.jpg"
+                alt="Espresso"
+                width="300"
+                height="300"
+              >
+
+              <div class="slide__content">
+                <h3 class="slide__title">Espresso</h3>
+                <p class="slide__description">
+                  A strong coffee with a rich aroma and deep taste.
+                </p>
+                <span class="slide__price">$3.50</span>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img
+                class="slide__image"
+                src="./assets/images/products/cappuccino.jpg"
+                alt="Cappuccino"
+                width="300"
+                height="300"
+              >
+
+              <div class="slide__content">
+                <h3 class="slide__title">Cappuccino</h3>
+                <p class="slide__description">
+                  Smooth espresso with steamed milk and soft foam.
+                </p>
+                <span class="slide__price">$4.50</span>
+              </div>
+            </article>
+
+            <article class="slide">
+              <img
+                class="slide__image"
+                src="./assets/images/products/latte.jpg"
+                alt="Latte"
+                width="300"
+                height="300"
+              >
+
+              <div class="slide__content">
+                <h3 class="slide__title">Latte</h3>
+                <p class="slide__description">
+                  A delicate combination of espresso and warm milk.
+                </p>
+                <span class="slide__price">$5.00</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="slider__controls">
+            <button
+              class="slider__button slider__button--prev"
+              type="button"
+              aria-label="Previous slide"
+            >
+              ←
+            </button>
+
+            <div class="slider__pagination">
+              <button
+                class="slider__indicator slider__indicator--active"
+                type="button"
+                aria-label="Show slide 1"
+              ></button>
+
+              <button
+                class="slider__indicator"
+                type="button"
+                aria-label="Show slide 2"
+              ></button>
+
+              <button
+                class="slider__indicator"
+                type="button"
+                aria-label="Show slide 3"
+              ></button>
+            </div>
+
+            <button
+              class="slider__button slider__button--next"
+              type="button"
+              aria-label="Next slide"
+            >
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- <section class="contacts" aria-labelledby="benefits-title">
+      <div class="contacts-container">
+        <h2 class="section__title" id="benefits-title">
+          Why choose us
+        </h2>
+
+        <div class="benefits__list">
+          <article class="benefit-card">
+            <h3 class="benefit-card__title">Fresh ingredients</h3>
+            <p class="benefit-card__text">
+              We use fresh and carefully selected ingredients every day.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3 class="benefit-card__title">Cozy atmosphere</h3>
+            <p class="benefit-card__text">
+              Enjoy a warm and comfortable space for work or relaxation.
+            </p>
+          </article>
+
+          <article class="benefit-card">
+            <h3 class="benefit-card__title">Friendly service</h3>
+            <p class="benefit-card__text">
+              Our team is always happy to make your visit special.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <!-- <footer class="footer" id="contact">
+    <div class="footer-container">
+      <div class="footer__brand">
+        <a class="logo" href="./index.html">
+          <img
+            src="./assets/images/icons/logo.svg"
+            alt="Coffee House logo"
+            width="120"
+            height="40"
+          >
+        </a>
+
+        <p class="footer__description">
+          Coffee, desserts and good moments every day.
+        </p>
+      </div>
+
+      <div class="footer__contacts">
+        <h2 class="footer__title">Contact us</h2>
+
+        <address class="footer__address">
+          <a href="tel:+10000000000">+1 000 000 0000</a>
+          <a href="mailto:hello@coffeehouse.com">
+            hello@coffeehouse.com
+          </a>
+          <span>123 Coffee Street</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Coffee House</p>
+    </div>
+  </footer> -->
+
+  <!-- <script type="module" src="./scripts/main.js"></script> -->
+</body>
+</html>
