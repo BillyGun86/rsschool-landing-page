@@ -1,0 +1,48 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 40px;
+    gap: 40px;
+}
+
+#about-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-align: left;
+  color: #403f3d;
+  margin: 0;
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: 600;
+  color: #b0907a;
+}
+
+.about-images {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.column_1, .column_2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    flex: 1;
+}
+
+.column_1 img, .column_2 img {
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+    border-radius: 20px;
+}
+
+.column_1 img:hover, .column_2 img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
