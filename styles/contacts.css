@@ -1,0 +1,99 @@
+.contacts-container {
+    display: flex;
+    border-radius: 40px;
+    margin: 100px 40px;
+    padding: 100px;
+    gap: 100px;
+    background: #665F55;
+}
+
+.contacts-offer, .contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#contacts-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-align: left;
+  color: #E1D4C9;
+  margin: 0;
+  max-width: 530px;
+  display: block;
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: 600;
+  color: #b0907a;
+}
+
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.contacts-info-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: 0;
+  text-align: left;
+  color: #E1D4C9;
+  margin: 0;
+}
+
+.contacts-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.link-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #E1D4C9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+.link-item svg {
+    flex-shrink: 0;
+    color: #E1D4C9;
+    transition: transform 0.2s ease;
+}
+
+a.link-item:hover {
+    color: #FFF;
+}
+
+a.link-item:hover svg {
+    transform: scale(1.1);
+}
+
+.socials a {
+    display: inline-flex;
+    outline: none;
+    border-radius: 100px;
+    transition: transform 0.3s ease;
+}
+
+.socials a:hover path {
+    stroke: #665F55;
+    transition: stroke 0.3s ease;
+}
+
+.socials a:focus-visible, .link-item:focus-visible {
+    outline: 2px solid #b0907a;
+    outline-offset: 4px;
+}
