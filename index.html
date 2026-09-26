@@ -11,8 +11,6 @@
 
   <title>Coffee House — Home</title>
 
-  <!-- <link rel="icon" href="./assets/favicon/favicon.ico"> -->
-
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/hero.css">
   <link rel="stylesheet" href="./styles/favorite-coffee.css">
@@ -38,27 +36,25 @@
         <ul class="navigation__list">
           <li class="navigation__item">
             <a
-              class="navigation__link navigation__link--active"
-              href="./index.html"
-            >
+              class="navigation__link" href="#favorite">
               Favorite coffee
             </a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="./menu.html">
+            <a class="navigation__link" href="#about">
               About
             </a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="#about">
+            <a class="navigation__link" href="#mobile-app">
               Mobile app
             </a>
           </li>
 
           <li class="navigation__item">
-            <a class="navigation__link" href="#contact">
+            <a class="navigation__link" href="#contacts">
               Contact us
             </a>
           </li>
@@ -72,8 +68,10 @@
         </div>
 
         <div class="coffee-menu">
-            <p>Menu</p>
+          <a class="navigation__link" href="./menu.html">
+            Menu
             <img src="./assets/images/icons/light/coffee-cup.svg" alt="coffee-cup">
+          </a>
         </div>
       </div>
     </div>
@@ -259,7 +257,7 @@
     </section>
   </main>
 
-  <footer class="footer" id="contact">
+  <footer class="footer" id="footer">
     <div class="footer-container">
       <div class="footer__brand">
         <a class="logo" href="./index.html">
@@ -294,6 +292,5 @@
     </div>
   </footer>
 
-  <!-- <script type="module" src="./scripts/main.js"></script> -->
 </body>
 </html>
